@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-family-default: EverydaySans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: var(--font-family-default);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .subtle-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.18) transparent;
+  }
+
+  .subtle-scrollbar:hover {
+    scrollbar-color: rgba(107, 114, 128, 0.65) transparent;
+  }
+
+  .subtle-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .subtle-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .subtle-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.18);
+    border-radius: 9999px;
+    transition: background-color 0.2s ease;
+  }
+
+  .subtle-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(107, 114, 128, 0.65);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-gray-200;
+  }
+
+  /* Marketplace shelf / Walmart-adjacent product tile */
+  .wm-shelf-card {
+    @apply bg-white border border-wm-border rounded-md shadow-wm hover:shadow-wm-md transition-shadow duration-200 overflow-hidden;
+  }
+
+  .wm-product-image {
+    @apply w-full h-[132px] sm:h-[148px] object-cover bg-[#f3f3f3];
+  }
+
+  .wm-page {
+    @apply bg-white text-wm-ink antialiased;
+  }
+}

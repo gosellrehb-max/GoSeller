@@ -1,0 +1,195 @@
+/* Divine Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Divine Global Styles */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  min-height: 100vh;
+}
+
+/* Divine Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(147, 51, 234, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+/* Divine Selection */
+::selection {
+  background: rgba(102, 126, 234, 0.3);
+  color: #1f2937;
+}
+
+/* Divine Focus States */
+.divine-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+}
+
+/* Divine Performance Optimizations */
+.divine-optimized {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Divine Glassmorphism */
+.divine-glass {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+/* Divine Neon Effects */
+.divine-neon {
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+  animation: divineGlow 2s ease-in-out infinite alternate;
+}
+
+/* Divine Text Gradients */
+.divine-text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Divine Border Gradients */
+.divine-border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #667eea 0%, #764ba2 100%) border-box;
+}
+
+/* Divine Shimmer Effect */
+.divine-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background-size: 200% 100%;
+  animation: divineShimmer 2s infinite;
+}
+
+/* Divine Animations */
+@keyframes divineFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes divineGlow {
+  0% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+  100% { box-shadow: 0 0 30px rgba(102, 126, 234, 0.8); }
+}
+
+@keyframes divinePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes divineShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes divineRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Divine Hover Effects */
+.divine-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+.divine-hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.divine-hover-rotate:hover {
+  transform: rotate(2deg);
+}
+
+/* Divine Animation Classes */
+.divine-pulse {
+  animation: divinePulse 2s infinite;
+}
+
+.divine-float {
+  animation: divineFloat 3s ease-in-out infinite;
+}
+
+.divine-rotate {
+  animation: divineRotate 20s linear infinite;
+}
+
+.divine-glow {
+  animation: divineGlow 2s ease-in-out infinite alternate;
+}
+
+/* Divine Performance Classes */
+.ultra-fast {
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Divine Responsive Design */
+@media (max-width: 768px) {
+  .divine-card {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .divine-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .divine-input {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Divine Selection Utilities */
+.divine-select-none {
+  user-select: none;
+}
+
+.divine-select-text {
+  user-select: text;
+}
+
+.divine-select-all {
+  user-select: all;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

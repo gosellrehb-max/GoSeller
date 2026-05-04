@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Builds
+dist/
+build/
+.next/
+**/dist/
+**/build/
+**/.next/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.cursor/
+
+# Internal docs
+AGENTS.md
+plans/
+docs/
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/

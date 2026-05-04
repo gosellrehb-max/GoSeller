@@ -1,0 +1,23 @@
+{
+  "name": "GoSellr - World's Best E-commerce Platform",
+  "short_name": "GoSellr",
+  "description": "The ultimate e-commerce platform with AI, blockchain, and multi-platform integration",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00966D",
+  "icons": [
+    {
+      "src": "/images/GoSellrIcon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/GoSellrIcon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 
